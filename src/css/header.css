@@ -1,27 +1,24 @@
-a {
-  text-decoration: none;
-}
-
 .header {
   background: #000;
+}
+.header-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 32px 0;
 }
 .header-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 .header-menu_item {
-  margin: 0 34px;
   font-family: "Manrope";
   font-style: normal;
   font-weight: 700;
@@ -31,6 +28,15 @@ a {
   text-transform: uppercase;
   color: #fff;
   list-style-type: none;
+}
+.header-menu_item:hover {
+  color: #D87D4A;
+}
+.header-menu_item:nth-child(2) {
+  margin: 0 17px 0 34px;
+}
+.header-menu_item:nth-child(3) {
+  margin: 0 34px 0 17px;
 }
 .header-btn_item {
   margin: 0 12px;

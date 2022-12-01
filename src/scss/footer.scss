@@ -1,0 +1,49 @@
+@import "_mixins.scss";
+
+.footer {
+  background: #000;
+  &-content {
+    padding: 56px 0;
+  }
+  &-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 0;
+    &-menu {
+      display: flex;
+      &_item {
+        @include menuItem-font;
+      }
+      &_item:hover {
+        color: #D87D4A;
+      }
+      &_item:nth-child(2) {
+        margin: 0 17px 0 34px;
+      }
+      &_item:nth-child(3) {
+        margin: 0 34px 0 17px;
+      }
+    }
+  }
+  &-about {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    &_txt {
+      width: 540px;
+      @include about-font;
+    }
+    &-links {
+      &_item:nth-child(2) {
+        margin: 0 16px;
+      }
+    }
+  }
+  &-copyright {
+    &_txt {
+      margin-top: 56px;
+      @include copyright-font;
+    }
+  }
+}

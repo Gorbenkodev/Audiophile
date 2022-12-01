@@ -1,19 +1,26 @@
 @import "_mixins.scss";
 
-a {
-  text-decoration: none;
-}
 .header {
   background: #000;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 0;
+  }
   &-menu {
     display: flex;
-    justify-content: space-around;
     &_item {
-      margin: 0 34px;
       @include menuItem-font;
+    }
+    &_item:hover {
+      color: #D87D4A;
+    }
+    &_item:nth-child(2) {
+      margin: 0 17px 0 34px;
+    }
+    &_item:nth-child(3) {
+      margin: 0 34px 0 17px;
     }
   }
   &-btn {
