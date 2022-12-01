@@ -1,0 +1,24 @@
+@import "_mixins.scss";
+
+a {
+  text-decoration: none;
+}
+.header {
+  background: #000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  &-menu {
+    display: flex;
+    justify-content: space-around;
+    &_item {
+      margin: 0 34px;
+      @include menuItem-font;
+    }
+  }
+  &-btn {
+    &_item {
+      margin: 0 12px;
+    }
+  }
+}

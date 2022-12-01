@@ -1,0 +1,11 @@
+@mixin menuItem-font {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 25px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  list-style-type: none;
+}
