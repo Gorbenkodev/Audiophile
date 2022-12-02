@@ -6,6 +6,7 @@ export function Footer() {
   return(
     <div className="footer">
       <div className="container footer-content">
+      <div className="footer-line"></div>
       <div className="footer-head">
         <a href=""><Logo /></a>
         <ul className="footer-head-menu">

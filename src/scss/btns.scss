@@ -1,0 +1,32 @@
+@import "_mixins.scss";
+
+.orangeBtn {
+  background-color: #D87D4A;
+  border: none;
+  width: 160px;
+  height: 47px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include Sub-Title;
+}
+.orangeBtn:hover {
+  background-color: #FBAF85;
+}
+
+.blackBtn {
+  background: none;
+  width: 160px;
+  height: 47px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
+  @include Sub-Title;
+  color: #000;
+
+}
+.blackBtn:hover {
+  background-color: #000;
+  color: #fff;
+}

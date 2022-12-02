@@ -1,0 +1,93 @@
+@import "_mixins.scss";
+
+.homepage {
+&-head {
+  min-height: 710px;
+  background: url(../img/homepage/homepage-head-bg.png);
+  background-color: #101010;
+  background-position: right;
+  background-repeat: no-repeat;
+  border-radius: 0 0 8px 8px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 240px;
+  &-content {
+    &_title{
+      @include Overline;
+    }
+    &_name {
+      @include H1;
+    }
+    &_description {
+      @include Body-Regular
+    }
+  }
+
+  }
+&-products {
+    display: flex;
+    flex-direction: column;
+    margin: 160px 0;
+    &-first {
+      background-image: url(../img/homepage/products-first-bg.png);
+      background-repeat: no-repeat;
+      background-color: #D87D4A;
+      min-height: 560px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      border-radius: 8px;
+      &-content {
+        width: 350px;
+        margin-right: 10%;
+        &_title {
+          @include H1;
+        }
+        &_description {
+          @include Body-Regular;
+        }
+      }
+    }
+    &-second {
+      margin: 48px 0;
+      background: url(../img/homepage/products-second-bg.png);
+      background-size: cover;
+      display: flex;
+      min-height: 320px;
+      align-items: center;
+      border-radius: 8px;
+      &-content {
+        margin-left: 10%;
+        &_title {
+          @include H4;
+          margin-bottom: 40px;
+        }
+      }
+    }
+    &-third {
+      display: flex;
+      &_img {
+        border-radius: 8px;
+        background-image: url(../img/homepage/product-third-bg.png);
+        background-size: cover;
+        width: 50%;
+        height: 320px;
+      }
+      &-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 30px;
+        border-radius: 8px;
+        padding-left: 95px;
+        width: 50%;
+        height: 320px;
+        background-color: #F1F1F1;
+        &_title {
+          @include H4;
+          margin-bottom: 40px;
+        }
+      }
+    }
+  } 
+}

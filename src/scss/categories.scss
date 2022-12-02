@@ -1,0 +1,45 @@
+@import "_mixins.scss";
+
+.arrow {
+  border: solid #D87D4A;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  margin-left: 10px;
+}
+
+.categories {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  &-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    background: #F1F1F1;
+    border-radius: 8px;
+    width: 350px;
+    height: 204px;
+    &_img {
+      position: absolute;
+      margin: auto;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 100%;
+    }
+    &_title {
+      @include H6;
+    }
+    &_link {
+      margin-bottom: 23px;
+      @include Sub-Title;
+      color: #808080;
+    }
+    &_link:hover {
+      color: #D87D4A;
+    }
+  }
+}
