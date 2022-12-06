@@ -1,12 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import '../css/header.css';
+import { Categories } from "./Categories";
 import { Basket, Logo, User } from "../img/svg";
 
+
+
 export function Header() {
+const [activeState, setActiveState] = useState(false)
 
   return(
     <div className="header">
-      <div className="container header-content">
+      <div className="container-md header-content">
+        <div className="menu-btn" onClick={setActiveState}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div className={`container-fluid tablMenu ${activeState ? 'activeTablMenu' : ''}`}>
+          <Categories />
+        </div>
         <a href="">
           <Logo />
         </a>

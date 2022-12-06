@@ -20,7 +20,7 @@
     position: relative;
     background: #F1F1F1;
     border-radius: 8px;
-    width: 350px;
+    // width: 350px;
     height: 204px;
     &_img {
       position: absolute;
@@ -40,6 +40,14 @@
     }
     &_link:hover {
       color: #D87D4A;
+    }
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  .categories {
+    &-block {
+      height: 154px;
     }
   }
 }

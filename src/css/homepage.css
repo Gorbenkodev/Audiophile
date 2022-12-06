@@ -99,6 +99,7 @@
   margin: 48px 0;
   background: url(../img/homepage/products-second-bg.png);
   background-size: cover;
+  background-position: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -162,4 +163,63 @@
   text-transform: uppercase;
   color: #000000;
   margin-bottom: 40px;
+}
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  .homepage-head {
+    background: url(../img/homepage/homepage-head-tablet-bg.png);
+    background-position: center;
+    text-align: center;
+  }
+  .homepage-head-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .homepage-products-first {
+    background: url(../img/homepage/product-first-tablet-bg.png);
+    background-position: center;
+    background-size: cover;
+    min-height: 720px;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding-bottom: 65px;
+  }
+  .homepage-products-first-content {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+  }
+  .homepage-products-second {
+    background-position: center;
+  }
+  .homepage-products-third_img {
+    background-position: center;
+  }
+  .homepage-products-third-content {
+    padding-left: 40px;
+  }
 }

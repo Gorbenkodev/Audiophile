@@ -16,12 +16,12 @@ export function HomePage() {
       <div className="homepage-head ">
         <div className="container homepage-head-content">
           <p className="homepage-head-content_title">new propduct</p>
-          <h1 className="homepage-head-content_name col-5">XX99 Mark II Headpho</h1>
-          <p className="homepage-head-content_description col-5">Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast.</p>
+          <h1 className="homepage-head-content_name col-9 col-md-5">XX99 Mark II Headphones</h1>
+          <p className="homepage-head-content_description col-9 col-md-5">Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast.</p>
           <OrangeBtn />
         </div>
       </div>
-        <div className="container homepage-content">
+        <div className="container-md homepage-content">
           <Categories />
           <div className="homepage-products">
             <div className="homepage-products-first">

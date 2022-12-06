@@ -52,6 +52,7 @@
       margin: 48px 0;
       background: url(../img/homepage/products-second-bg.png);
       background-size: cover;
+      background-position: center;
       display: flex;
       min-height: 320px;
       align-items: center;
@@ -90,4 +91,49 @@
       }
     }
   } 
+}
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  .homepage {
+    &-head {
+      background: url(../img/homepage/homepage-head-tablet-bg.png);
+      background-position: center;
+      text-align: center;
+      &-content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    &-products {
+      &-first{
+        background: url(../img/homepage/product-first-tablet-bg.png);
+        background-position: center;
+        background-size: cover;
+        min-height: 720px;
+        align-items: flex-end;
+        padding-bottom: 65px;
+        &-content{
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin: 0 auto;
+        }
+      }
+      &-second {
+        background-position: center;
+      }
+      &-third {
+        &_img {
+          background-position: center;
+        }
+        &-content {
+          padding-left: 40px;
+        }
+      }
+    }
+  }
 }

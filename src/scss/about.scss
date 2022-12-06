@@ -16,5 +16,30 @@
       @include Body-Regular;
       color: #000000;
     }
+    &_img {
+      background: url(../img/about/about-img.png);
+      background-repeat: no-repeat;
+      background-position: right;
+      width: 540px;
+      height: 588px;
+      border-radius: 8px;
+    }
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  .about {
+    flex-direction: column-reverse;
+    &-content {
+      text-align: center;
+      width: 80%;
+      &_img {
+        background: url(../img/about/about-tablet-img.png);
+        background-position: center;
+        height: 300px;
+        width: 100%;
+        margin-bottom: 60px;
+      }
+    }
   }
 }

@@ -35,3 +35,57 @@
   }
 }
 
+.menu {
+  &-btn {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    display: none;
+    > span {
+      width: 16px;
+      height: 3px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #FFFFFF;
+      transition: all 0.5s;
+    }
+    > span:nth-of-type(2) {
+      top: calc(50% - 5px)
+    }
+    > span:nth-of-type(3) {
+      top: calc(50% + 5px);
+    }
+  }
+}
+.tablMenu {
+  display: none;
+}
+.activeTablMenu {
+  z-index: 1;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 56px;
+  position: absolute;
+  background-color: #FFFFFF;
+  height: 344px;
+  top: 90px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@media screen and (max-width: 768px){
+  .header {
+    &-menu {
+      display: none;
+    }
+  }
+  .menu {
+    &-btn {
+      display: block;
+    }
+  }
+}
+
