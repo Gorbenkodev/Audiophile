@@ -54,7 +54,11 @@
   }
 }
 
-@media screen and (min-width: 375px) and (max-width: 768px) {
+.facebookIcon:hover, .twitterIcon:hover, .instagramIcon:hover {
+  fill: #D87D4A;
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
   .footer {
     margin-top: 120px;
     &-head {

@@ -6,12 +6,12 @@ import { Basket, Logo, User } from "../img/svg";
 
 
 export function Header() {
-const [activeState, setActiveState] = useState(false)
+const [activeState, setActiveState] = useState()
 
   return(
     <div className="header">
       <div className="container-md header-content">
-        <div className="menu-btn" onClick={setActiveState}>
+        <div className="menu-btn" onClick={() => {setActiveState(activeState => !activeState)}}>
           <span></span>
           <span></span>
           <span></span>
@@ -19,6 +19,7 @@ const [activeState, setActiveState] = useState(false)
         <div className={`container-fluid tablMenu ${activeState ? 'activeTablMenu' : ''}`}>
           <Categories />
         </div>
+        <div className={`modalShadow ${activeState ? 'shadow' : ''}`}></div>
         <a href="">
           <Logo />
         </a>

@@ -1,0 +1,29 @@
+@import "_mixins.scss";
+
+.product {
+  display: flex;
+  margin: 160px 0;
+  &-img {
+    background-color: #F1F1F1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10%;
+    &_name {
+      @include H2;
+      width: 80%;
+    }
+    &_description {
+      margin: 32px 0 40px 0;
+      width: 80%;
+      @include Body-Regular;
+      color: #000;
+      opacity: 0.5;
+    }
+  }
+}

@@ -16,6 +16,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   text-align: center;
+  margin: 240px 0 160px 0;
 }
 .categories-block {
   display: -webkit-box;
@@ -31,6 +32,7 @@
   position: relative;
   background: #F1F1F1;
   border-radius: 8px;
+  width: 100%;
   height: 204px;
 }
 .categories-block_img {
@@ -67,9 +69,18 @@
 .categories-block_link:hover {
   color: #D87D4A;
 }
+.categories-block:nth-child(2) {
+  margin: 0 30px;
+}
 
-@media screen and (min-width: 375px) and (max-width: 768px) {
-  .categories-block {
-    height: 154px;
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .categories {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .categories-block:nth-child(2) {
+    margin: 124px 0;
   }
 }

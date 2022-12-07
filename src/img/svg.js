@@ -1,5 +1,3 @@
-import '../css/svg.css'
-
 
 export const Logo = () => {
   return(  
