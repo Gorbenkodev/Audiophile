@@ -1,0 +1,87 @@
+.productAdd {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.productAdd-img {
+  background-color: #F1F1F1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.productAdd-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 10%;
+}
+.productAdd-content_name {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 44px;
+  letter-spacing: 1.42857px;
+  text-transform: uppercase;
+  color: #000000;
+  width: 80%;
+}
+.productAdd-content_description {
+  margin: 32px 0 40px 0;
+  width: 80%;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+  color: #000;
+  opacity: 0.5;
+}
+.productAdd-content_price {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1.28571px;
+  text-transform: uppercase;
+}
+.productAdd-content-add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.productAdd-content-add_counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F1F1F1;
+  margin-right: 16px;
+}
+.productAdd-content-add_counter > button {
+  border: none;
+  background-color: #F1F1F1;
+  padding: 0 20px;
+}
+.productAdd-content-add_counter > p {
+  margin: 0;
+}

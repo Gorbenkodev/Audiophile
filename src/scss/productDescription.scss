@@ -1,0 +1,40 @@
+@import "_mixins.scss";
+
+.productDescription {
+  display: flex;
+  margin: 120px 0;
+  &-features {
+    &_title {
+      @include H3;
+      margin-bottom: 32px;
+    }
+    &_description {
+      @include Body-Regular;
+      color: #000;
+      opacity: 0.5;
+    }
+  }
+  &-inTheBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &_title {
+      @include H3;
+    }
+    &-list {
+      &-item {
+        display: flex;
+        &_amount {
+          @include Body-Regular;
+          color: #D87D4A;
+          margin-right: 24px
+        }
+        &_name {
+          @include Body-Regular;
+          color: #000;
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}

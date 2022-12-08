@@ -30,3 +30,19 @@
   background-color: #000;
   color: #fff;
 }
+
+.addBtn {
+  background-color: #D87D4A;
+  border: none;
+  width: 160px;
+  height: 47px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include Sub-Title;
+}
+
+.addBtn:hover {
+  background-color: #FBAF85;
+
+}

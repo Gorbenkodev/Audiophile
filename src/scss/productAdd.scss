@@ -1,0 +1,54 @@
+@import "_mixins.scss";
+
+.productAdd {
+  display: flex;
+  &-img{
+    background-color: #F1F1F1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10%;
+    &_name {
+      @include H2;
+      width: 80%;
+    }
+    &_description {
+      margin: 32px 0 40px 0;
+      width: 80%;
+      @include Body-Regular;
+      color: #000;
+      opacity: 0.5;
+    }
+    &_price {
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 25px;
+      letter-spacing: 1.28571px;
+      text-transform: uppercase;
+    }
+    &-add {
+      display: flex;
+      &_counter {
+        display: flex;
+        align-items: center;
+        background-color: #F1F1F1;
+        margin-right: 16px;
+        & > button {
+          border: none;
+          background-color: #F1F1F1;
+          padding: 0 20px;
+        }
+        & > p {
+          margin: 0;
+        }
+      }
+    }
+  }
+}

@@ -16,3 +16,11 @@ export function BlackBtn () {
     </button>
   )
 }
+
+export function AddBtn () {
+  return (
+    <button className="addBtn">
+      add to cart
+    </button>
+  )
+}
