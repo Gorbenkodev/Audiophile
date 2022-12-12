@@ -1,0 +1,102 @@
+@import "_mixins.scss";
+
+.cart {
+  z-index: 2;
+  display: none;
+  position: absolute;
+  top: 15%;
+  right: 20%;
+  background: #fff;
+  border-radius: 8px;
+  width: 386px;
+  padding: 32px;
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    &_title {
+      @include H6;
+    }
+    &_btn {
+      @include Body-Regular;
+      color: #000;
+      opacity: 0.5;
+    }
+  }
+  &-content {
+    &-product {
+      margin: 32px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &-img {
+        width: 64px;
+        height: 64px;
+        background: #f1f1f1;
+        background-image: url(../img/1.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      &-txt {
+        &_name {
+          @include Body-Bold;
+          margin: 0;
+        }
+        &_price {
+          @include Sub-Title;
+          color: #808080;
+          margin: 0;
+        }
+      }
+      &-counter {
+        display: flex;
+        background-color: #F1F1F1;
+        height: 32px;
+        & > button {
+          border: none;
+          padding: 0 15px;
+        }
+        & > p {
+          align-self: center;
+          margin: 0;
+        }
+      }
+    }
+    &-total {
+      display: flex;
+      justify-content: space-between;
+      &_title {
+        @include Body-Regular;
+        color: #000;
+        text-transform: uppercase;
+        opacity: 0.5;
+      }
+      &_price {
+        @include H6;
+      }
+    }
+    &_btn {
+      width: 100%;
+      color: #fff;
+      border: none;
+      background-color: #D87D4A;
+      padding: 11px;
+      @include Sub-Title;
+    }
+  }
+}
+
+.cartActive {
+  display: block;
+  z-index: 2;
+}
+
+.shadow {
+  position:fixed;
+  left:0;
+  top:0;
+  height:100vh;
+  width:100vw;
+  background:#000;
+  opacity:0.5;
+  z-index: -2;
+}

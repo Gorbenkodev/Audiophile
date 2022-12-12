@@ -2,24 +2,27 @@ import React, { useState } from "react";
 import '../css/header.css';
 import { Categories } from "./Categories";
 import { Basket, Logo, User } from "../img/svg";
+import { Cart } from "./Cart";
 
 
 
 export function Header() {
-const [activeState, setActiveState] = useState()
+const [menuActiveState, setMenuActiveState] = useState()
+
+const [cartActiveState, setCartActiveState] = useState()
 
   return(
     <div className="header">
       <div className="container-md header-content">
-        <div className="menu-btn" onClick={() => {setActiveState(activeState => !activeState)}}>
+        <div className="menu-btn" onClick={() => {setMenuActiveState(menuActiveState => !menuActiveState)}}>
           <span></span>
           <span></span>
           <span></span>
         </div>
-        <div className={`container-fluid tablMenu ${activeState ? 'activeTablMenu' : ''}`}>
+        <div className={`container-fluid tablMenu ${menuActiveState ? 'activeTablMenu' : ''}`}>
           <Categories />
         </div>
-        <div className={`modalShadow ${activeState ? 'shadow' : ''}`}></div>
+        <div className={`modalShadow ${menuActiveState ? 'shadow' : ''}`}></div>
         <a href="">
           <Logo />
         </a>
@@ -30,7 +33,7 @@ const [activeState, setActiveState] = useState()
           <a className="header-menu_item" href=""><li>earphones</li></a>
         </ul>
         <div className="header-btn">
-        <a className="header-btn_item" href="">
+        <a className="header-btn_item" onClick={() => {setCartActiveState(cartActiveState => !cartActiveState)}}>
           <Basket />
         </a>
         <a className="header-btn_item" href="">
@@ -38,6 +41,7 @@ const [activeState, setActiveState] = useState()
         </a>
         </div>
       </div>
+      <Cart />
     </div>
   )
 }

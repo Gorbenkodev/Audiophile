@@ -1,0 +1,13 @@
+@import "_mixins.scss";
+
+.productDetail {
+  &-content {
+    margin-top: 100px;
+  }
+}
+
+.backBtn {
+  @include Body-Regular;
+  color: #000;
+  opacity: 0.5;
+}

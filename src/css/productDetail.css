@@ -1,0 +1,16 @@
+.productDetail-content {
+  margin-top: 100px;
+}
+
+.backBtn {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+  color: #000;
+  opacity: 0.5;
+}

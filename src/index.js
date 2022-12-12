@@ -4,6 +4,7 @@ import { Routes, Route, Switch } from 'react-router-dom'
 import { CategoryEarphones } from './pages/categoryEarphones';
 import { CategoryHeadphones } from './pages/categoryHeadphones';
 import { CategorySpeakers } from './pages/categorySpeackers';
+import { Checkout } from './pages/checkout';
 import { HomePage } from './pages/homepage';
 import { ProductDetail } from './pages/productDetail';
 
@@ -13,7 +14,8 @@ root.render(
   // <CategoryHeadphones />,
   // <CategorySpeakers />,
   // <CategoryEarphones />,
-  <ProductDetail />
+  // <ProductDetail />,
+  <Checkout />
   
 
 );

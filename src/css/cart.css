@@ -1,0 +1,164 @@
+.cart {
+  z-index: 2;
+  display: none;
+  position: absolute;
+  top: 15%;
+  right: 20%;
+  background: #fff;
+  border-radius: 8px;
+  width: 386px;
+  padding: 32px;
+}
+.cart-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.cart-header_title {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 1.28571px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.cart-header_btn {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+  color: #000;
+  opacity: 0.5;
+}
+.cart-content-product {
+  margin: 32px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.cart-content-product-img {
+  width: 64px;
+  height: 64px;
+  background: #f1f1f1;
+  background-image: url(../img/1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.cart-content-product-txt_name {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  color: #000000;
+  margin: 0;
+}
+.cart-content-product-txt_price {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 25px;
+  letter-spacing: 0.928571px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  color: #808080;
+  margin: 0;
+}
+.cart-content-product-counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #F1F1F1;
+  height: 32px;
+}
+.cart-content-product-counter > button {
+  border: none;
+  padding: 0 15px;
+}
+.cart-content-product-counter > p {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 0;
+}
+.cart-content-total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.cart-content-total_title {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+  color: #000;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+.cart-content-total_price {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 1.28571px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.cart-content_btn {
+  width: 100%;
+  color: #fff;
+  border: none;
+  background-color: #D87D4A;
+  padding: 11px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 25px;
+  letter-spacing: 0.928571px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.cartActive {
+  display: block;
+  z-index: 2;
+}
+
+.shadow {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background: #000;
+  opacity: 0.5;
+  z-index: -2;
+}

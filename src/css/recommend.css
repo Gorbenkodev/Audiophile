@@ -1,5 +1,6 @@
 .recommend {
   text-align: center;
+  margin: 160px 0;
 }
 .recommend_title {
   font-family: "Manrope";
@@ -36,6 +37,7 @@
   background-color: #F1F1F1;
   width: 100%;
   height: 350px;
+  padding: 30px;
 }
 .recommend-block_name {
   font-family: "Manrope";

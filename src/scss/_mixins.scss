@@ -77,6 +77,16 @@
   list-style-type: none;
 }
 
+@mixin Body-Bold {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  color: #000000;
+}
+
 @mixin Body-Regular {
   font-family: 'Manrope';
   font-style: normal;
