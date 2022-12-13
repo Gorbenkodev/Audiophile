@@ -133,3 +133,24 @@
   mix-blend-mode: normal;
   opacity: 0.5;
 }
+
+@mixin Label-text {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.214286px;
+  color: #000000;
+}
+
+@mixin Input-text {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: -0.25px;
+  color: #808080;
+  mix-blend-mode: normal;
+}
