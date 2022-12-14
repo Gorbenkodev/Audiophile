@@ -1,5 +1,12 @@
 @import "_mixins.scss";
 
+.checkoutBackBtn {
+  position: absolute;
+  top: 10%;
+  @include Body-Regular;
+  color: #000;
+  opacity: 0.5;
+}
 
 .checkout {
   background: #F2F2F2;
@@ -33,6 +40,7 @@
             background: #fff;
             @include Input-text;
             width: 100%;
+            outline: none;
           }
         }
       }
@@ -259,6 +267,10 @@
     width: 100%;
     padding: 11px 0;
   }
+}
+
+.checkoutModalActive {
+  display: block;
 }
 
 .checkout-content-form-shopping-inpts-address { grid-area: address;}

@@ -9,7 +9,6 @@ import { About } from "../components/About";
 
 export function HomePage() {
 
-
   return(
     <div className="homepage">
       <Header />
@@ -18,7 +17,7 @@ export function HomePage() {
           <p className="homepage-head-content_title">new propduct</p>
           <h1 className="homepage-head-content_name col-9 col-md-5">XX99 Mark II Headphones</h1>
           <p className="homepage-head-content_description col-9 col-md-5">Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast.</p>
-          <OrangeBtn />
+          <a href="/productDeatil"><OrangeBtn /></a>
         </div>
       </div>
         <div className="container-md homepage-content">
@@ -28,20 +27,20 @@ export function HomePage() {
               <div className="homepage-products-first-content">
                 <h3 className="homepage-products-first-content_title">ZX9 SPEAKER</h3>
                 <p className="homepage-products-first-content_description">Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.</p>
-                <BlackBtn />
+                <a href="/productDeatil"><BlackBtn /></a>
               </div>
             </div>
             <div className="homepage-products-second">
               <div className="homepage-products-second-content">
                 <h3 className="homepage-products-second-content_title">ZX7 SPEAKER</h3>
-                <BlackBtn />
+                <a href="/productDeatil"><BlackBtn /></a>
               </div>
             </div>
             <div className="homepage-products-third">
               <div className="homepage-products-third_img"></div>
               <div className="homepage-products-third-content">
                 <h3 className="homepage-products-third-content_title">YX1 EARPHONES</h3>
-                <BlackBtn />
+                <a href="/productDeatil"><BlackBtn /></a>
               </div>
             </div>
           </div>

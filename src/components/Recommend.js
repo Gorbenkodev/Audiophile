@@ -11,17 +11,17 @@ export function Recommend() {
         <div className="recommend-block">
           <div className="recommend-block-img"><img src={require('../img/recommend/recommend-first.png')}></img></div>
           <h5 className="recommend-block_name">XX99 MARK I</h5>
-          <OrangeBtn />
+          <a href="/productDeatil"><OrangeBtn /></a>
         </div>
         <div className="recommend-block">
           <div className="recommend-block-img"><img src={require('../img/recommend/recommend-second.png')}></img></div>
           <h5 className="recommend-block_name">XX59</h5>
-          <OrangeBtn />
+          <a href="/productDeatil"><OrangeBtn /> </a>
         </div>
         <div className="recommend-block">
           <div className="recommend-block-img"><img src={require('../img/recommend/recommend-third.png')}></img></div>
           <h5 className="recommend-block_name">ZX9 SPEAKER</h5>
-          <OrangeBtn />
+          <a href="/productDeatil"><OrangeBtn /> </a>
         </div>
       </div>
     </div>

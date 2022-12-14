@@ -7,7 +7,7 @@ export function Cart() {
 
   
   return(
-    <div className={`cart `}/* cartActive */ >
+    <div className={`cart`}/* cartActive */ >
         <div className="cart-header">
           <h6 className="cart-header_title">Cart (1)</h6>
           <a className="cart-header_btn" href="">Remove all</a>
@@ -30,7 +30,7 @@ export function Cart() {
           <p className="cart-content-total_title">Total</p>
           <h6 className="cart-content-total_price">$ 5,396</h6>
         </div>
-        <button className="cart-content_btn">Checkout</button>
+        <a href="/checkout"><button className="cart-content_btn">Checkout</button></a>
     </div>
     
   )

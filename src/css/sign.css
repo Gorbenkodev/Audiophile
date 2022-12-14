@@ -1,0 +1,211 @@
+.signIn, .signUp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.signIn-content, .signUp-content {
+  margin: 130px 90px;
+}
+.signIn-content_title, .signUp-content_title {
+  margin: 100px 0 65px 0;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 44px;
+  letter-spacing: 1.42857px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.signIn-content-form-block, .signUp-content-form-block {
+  margin: 24px 0;
+  position: relative;
+}
+.signIn-content-form-block_name, .signUp-content-form-block_name {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.214286px;
+  color: #000000;
+}
+.signIn-content-form-block_inpt, .signUp-content-form-block_inpt {
+  width: 100%;
+  padding: 18px 24px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: -0.25px;
+  color: #808080;
+  mix-blend-mode: normal;
+  color: #101010;
+  border: 1px solid #CFCFCF;
+  border-radius: 8px;
+  outline: none;
+}
+.signIn-content-form-block_inpt:focus, .signUp-content-form-block_inpt:focus {
+  border: 1px solid #D87D4A;
+}
+.signIn-content-form-checkBlock, .signUp-content-form-checkBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.signIn-content-form-checkBlock_inpt, .signUp-content-form-checkBlock_inpt {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.signIn-content-form-checkBlock_label, .signUp-content-form-checkBlock_label {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+  color: #101010;
+  opacity: 0.75;
+  cursor: pointer;
+}
+.signIn-content-form-checkBlock_inpt + label, .signUp-content-form-checkBlock_inpt + label {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.signIn-content-form-checkBlock_inpt + label::before, .signUp-content-form-checkBlock_inpt + label::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.signIn-content-form-checkBlock_inpt:checked + label::before, .signUp-content-form-checkBlock_inpt:checked + label::before {
+  content: url(../img/Checkmark.png);
+  border: none;
+}
+.signIn-content-form_btn, .signUp-content-form_btn {
+  margin-top: 32px;
+  width: 100%;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 25px;
+  letter-spacing: 0.928571px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #D87D4A;
+  border: none;
+  padding: 11px;
+}
+.signIn-content-footer, .signUp-content-footer {
+  margin-top: 120px;
+  text-align: center;
+}
+.signIn-content-footer_txt, .signUp-content-footer_txt {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+  color: #808080;
+  opacity: 0.75;
+}
+.signIn-content-footer_btn, .signUp-content-footer_btn {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 25px;
+  letter-spacing: 0.928571px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  color: #808080;
+}
+.signIn-content-footer_btn:hover, .signUp-content-footer_btn:hover {
+  color: #D87D4A;
+}
+.signIn-img, .signUp-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background: url(../img/signin-bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: #101010;
+  width: 100%;
+  border-radius: 8px 0 0 8px;
+}
+.signIn-img_txt, .signUp-img_txt {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 58px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 0 0 100px 110px;
+}
+
+.signUp-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background: url(../img/signup-bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: #101010;
+  width: 100%;
+  border-radius: 8px 0 0 8px;
+}
+.signUp-img_txt {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 58px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 0 0 100px 110px;
+}
+
+.hide-icon::after {
+  content: url(../img/input-eye.png);
+  position: absolute;
+  top: 54%;
+  right: 27px;
+}
+
+input:focus {
+  border: 1px solid #D87D4A;
+}

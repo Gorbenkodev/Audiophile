@@ -1,7 +1,9 @@
 @import "_mixins.scss";
 
+
 .header {
-  background: #101010;
+  background: #000;
+  position: relative;
   &-content {
     height: 94px;
     display: flex;
@@ -32,6 +34,7 @@
     }
     &_item:hover {
       fill: #333333;
+      cursor: pointer;
     }
   }
 }
@@ -91,6 +94,32 @@
   background:#000;
   opacity:0.5;
   z-index: 1
+}
+
+.userSign {
+  display: none;
+  position: absolute;
+  right: 15%;
+  top: 80%;
+  width: 130px;
+  background-color: #FFFFFF;
+  flex-direction: column;
+  text-align: center;
+  & > a {
+    color: #000;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 4px;
+  }
+}
+.userSignActive {
+  display: flex;
 }
 
 @media screen and (max-width: 767px){

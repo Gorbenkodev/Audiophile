@@ -1,15 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import '../css/checkout.css'
 export function Checkout() {
 
+  const [modalActive, setModalActive] = useState(false)
+
   return(
     <div className="checkout">
       <Header />
       <div className="container checkout-content">
+      <a href="#" className="checkoutBackBtn">Go Back</a>
         <form className="checkout-content-form col-9">
-          <a href="" className="backBtn">Go Back</a>
           <h3 className="checkout-content-form-title">Checkout</h3>
           <div className="checkout-content-form-billing">
             <h5 className="checkout-content-form-block_title">billing details</h5>
@@ -97,10 +99,10 @@ export function Checkout() {
               <p className="checkout-content-sum-info-block_price">$ 5,446</p>
             </div>
           </div>
-          <button className="checkout-content-sum_btn">CONTINUE & PAY</button>
+          <button onClick={() => setModalActive(prev => !prev)} className="checkout-content-sum_btn">CONTINUE & PAY</button>
         </div>
       </div>
-      <div className="checkoutModal">
+      <div className={`checkoutModal ${modalActive ? 'checkoutModalActive' : ''}`}>
         <div className="checkoutModal-icon">
           <p><i className="checkoutModal-icon_arrow"></i></p>
         </div>
@@ -127,7 +129,7 @@ export function Checkout() {
             </div>
           </div>
         </div>
-        <button className="checkoutModal_btn">BACK TO HOME</button>
+        <a href="/"><button className="checkoutModal_btn">BACK TO HOME</button></a>
       </div>
       <Footer />
     </div>

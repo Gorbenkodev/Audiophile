@@ -1,3 +1,18 @@
+.checkoutBackBtn {
+  position: absolute;
+  top: 10%;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+  color: #000;
+  opacity: 0.5;
+}
+
 .checkout {
   background: #F2F2F2;
   position: relative;
@@ -60,6 +75,7 @@
   color: #808080;
   mix-blend-mode: normal;
   width: 100%;
+  outline: none;
 }
 .checkout-content-form-billing-inpts {
   display: -ms-grid;
@@ -415,6 +431,10 @@
   color: #FFFFFF;
   width: 100%;
   padding: 11px 0;
+}
+
+.checkoutModalActive {
+  display: block;
 }
 
 .checkout-content-form-shopping-inpts-address {

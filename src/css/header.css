@@ -1,5 +1,6 @@
 .header {
-  background: #101010;
+  background: #000;
+  position: relative;
 }
 .header-content {
   height: 94px;
@@ -45,6 +46,7 @@
 }
 .header-btn_item:hover {
   fill: #333333;
+  cursor: pointer;
 }
 
 .menu-btn {
@@ -109,6 +111,38 @@
   background: #000;
   opacity: 0.5;
   z-index: 1;
+}
+
+.userSign {
+  display: none;
+  position: absolute;
+  right: 15%;
+  top: 80%;
+  width: 130px;
+  background-color: #FFFFFF;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+.userSign > a {
+  color: #000;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 4px;
+}
+
+.userSignActive {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media screen and (max-width: 767px) {

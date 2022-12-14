@@ -18,7 +18,7 @@ export function ProductDetail() {
     <div className="productDetail">
       <Header />
       <div className="container productDetail-content">
-        <a href="" className="backBtn">Go Back</a>
+        <a href="" className="productBackBtn">Go Back</a>
         <ProductAdd />
         <ProductDescription />
         <Gallery />
