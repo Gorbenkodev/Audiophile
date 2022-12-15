@@ -19,7 +19,7 @@
       @include H1;
     }
     &_description {
-      @include Body-Regular
+      @include Body-Regular;
     }
   }
 
@@ -128,7 +128,7 @@
   }
 }
 
-@media screen and (min-width: 576px) and (max-width: 768px) {
+@media screen and (min-width: 577px) and (max-width: 768px) {
   .homepage {
     &-head {
       background: url(../img/homepage/homepage-head-tablet-bg.png);
@@ -167,6 +167,56 @@
         }
         &-content {
           padding-left: 40px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .homepage {
+    &-head {
+      background: url(../img/homepage/homepage-head-tablet-bg.png);
+      background-position: center;
+      text-align: center;
+      &-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &_name {
+          @include H3;
+          color: #FFF;
+        }
+      }
+    }
+    &-products {
+      &-first {
+        background: url(../img/homepage/product-first-tablet-bg.png);
+        background-position: center;
+        background-size: cover;
+        min-height: 600px;
+        align-items: flex-end;
+        padding-bottom: 65px;
+        &-content{
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin: 0 auto;
+        }
+      }
+      &-third {
+        flex-direction: column;
+        align-items: center;
+        &_img {
+          width: 100%;
+          background-position: center;
+        }
+        &-content {
+          margin-top: 24px;
+          padding-left: 24px;
+          width: 100%;
         }
       }
     }

@@ -5,7 +5,6 @@
   grid-template-columns: 1fr 1fr; 
   grid-template-rows: 1fr 1fr; 
   gap: 30px 30px; 
-  // justify-items: center;
   grid-template-areas: 
     "first-img third-img"
     "second-img third-img";
@@ -18,3 +17,10 @@
 .frist-img { grid-area: first-img; }
 .second-img { grid-area: second-img; }
 .third-img { grid-area: third-img; }
+
+@media screen and (max-width: 576px) {
+  .gallery {
+    display: flex;
+    flex-direction: column;
+  }
+}

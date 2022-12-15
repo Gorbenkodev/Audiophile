@@ -13,7 +13,6 @@
   display: flex;
   justify-content: space-between;
   text-align: center;
-  margin: 240px 0 160px 0;
   &-block {
     display: flex;
     flex-direction: column;
@@ -48,11 +47,27 @@
   }
 }
 
-@media screen and (min-width: 576px) and (max-width: 768px) {
+@media screen and (min-width: 577px) and (max-width: 768px) {
   .categories {
+    &-block {
+      height: 154px;
+      &_img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .categories {
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    &-block {
+      width: 90%;
+    }
     &-block:nth-child(2) {
-      margin: 124px 0;
+      margin: 130px 0;
     }
   }
 }

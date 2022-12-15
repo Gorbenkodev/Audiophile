@@ -17,7 +17,7 @@ export function ProductDetail() {
   return(
     <div className="productDetail">
       <Header />
-      <div className="container productDetail-content">
+      <div className="container-md productDetail-content">
         <a href="" className="productBackBtn">Go Back</a>
         <ProductAdd />
         <ProductDescription />

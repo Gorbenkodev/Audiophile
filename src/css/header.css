@@ -92,7 +92,7 @@
   background-color: #FFFFFF;
   border-radius: 8px;
   height: 344px;
-  top: 90px;
+  top: 100%;
   left: 0;
   right: 0;
   bottom: 0;
@@ -145,17 +145,19 @@
   display: flex;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .header-menu {
     display: none;
   }
   .menu-btn {
     display: block;
   }
-  .activeTablMenu {
-    height: 155%;
-  }
   .shadow {
     display: block;
+  }
+}
+@media screen and (max-width: 576px) {
+  .activeTablMenu {
+    height: 1050px;
   }
 }

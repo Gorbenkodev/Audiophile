@@ -7,11 +7,12 @@ import { Cart } from "./Cart";
 
 
 export function Header() {
-const [menuActiveState, setMenuActiveState] = useState()
+const [menuActiveState, setMenuActiveState] = useState();
 
-const [cartActiveState, setCartActiveState] = useState()
+const [cartActiveState, setCartActiveState] = useState();
 
-const [signModal, setSignModal] = useState()
+const [signModal, setSignModal] = useState();
+
 
   return(
     <div className="header">
@@ -24,7 +25,7 @@ const [signModal, setSignModal] = useState()
         <div className={`container-fluid tablMenu ${menuActiveState ? 'activeTablMenu' : ''}`}>
           <Categories />
         </div>
-        <div className={`modalShadow ${menuActiveState ? 'shadow' : ''}`}></div>
+      <div className={`modalShadow ${menuActiveState ? 'shadow' : ''}`}></div>
         <a href="/">
           <Logo />
         </a>
@@ -49,5 +50,6 @@ const [signModal, setSignModal] = useState()
       </div>
       <Cart />
     </div>
+    
   )
 }

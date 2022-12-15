@@ -8,6 +8,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 120px;
 }
 .about-content {
   width: 450px;
@@ -35,6 +36,7 @@
   mix-blend-mode: normal;
   opacity: 0.75;
   color: #000000;
+  opacity: 0.5;
 }
 .about-content_img {
   background: url(../img/about/about-img.png);
@@ -45,7 +47,7 @@
   border-radius: 8px;
 }
 
-@media screen and (min-width: 576px) and (max-width: 768px) {
+@media screen and (min-width: 577px) and (max-width: 768px) {
   .about {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -62,5 +64,34 @@
     height: 300px;
     width: 100%;
     margin-bottom: 60px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .about-content {
+    width: 100%;
+    text-align: center;
+  }
+  .about-content_title {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #000000;
+    margin: 40px 0 24px 0;
+  }
+  .about-content_img {
+    background: url(../img/about/about-tablet-img.png);
+    background-position: center;
+    width: 100%;
+    height: 300px;
   }
 }

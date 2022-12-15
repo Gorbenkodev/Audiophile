@@ -15,7 +15,7 @@ export function CategorySpeakers() {
       <div className="categoryPage-head">
         <h2 className="categoryPage-head_title">speakers</h2>
       </div>
-      <div className="container categoryPage-content">
+      <div className="container-md categoryPage-content">
         <Product />
         <Product />
         <Categories />

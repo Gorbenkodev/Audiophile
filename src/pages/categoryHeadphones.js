@@ -15,7 +15,7 @@ export function CategoryHeadphones() {
       <div className="categoryPage-head">
         <h2 className="categoryPage-head_title">headphones</h2>
       </div>
-      <div className="container categoryPage-content">
+      <div className="container-md categoryPage-content">
         <Product />
         <Product />
         <Product />
