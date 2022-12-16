@@ -2,6 +2,14 @@
 
 .signIn, .signUp {
   display: flex;
+  &-header {
+    display: none;
+    height: 90px;
+    padding: 32px 0;
+    border-bottom: 1px solid #333333;
+    width: 90%;
+    margin: 0 auto;
+  }
   &-content {
     margin: 130px 90px;
     &_title {
@@ -134,4 +142,73 @@
 
 input:focus {
   border: 1px solid #D87D4A;
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .signIn, .signUp {
+    flex-direction: column;
+    background: url(../img/signIn-tablet-bg.png);
+    &-header {
+      display: block;
+    }
+    &-content {
+      margin: 120px auto;
+      width: 70%;
+      background-color: #FFF;
+      padding: 48px;
+      border-radius: 8px;
+      &_title {
+        margin: 0;
+      }
+      &-footer {
+        margin-top: 40px;
+      }
+      & > a {
+        display: none;
+      }
+    }
+    &-img {
+      display: none;
+    }
+  }
+  .signUp {
+    background: url(../img/signUp-tablet-bg.png);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .signIn, .signUp {
+    flex-direction: column;
+    background: url(../img/signIn-tablet-bg.png);
+    &-header {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &-content {
+      margin: 120px auto;
+      width: 90%;
+      background-color: #FFF;
+      padding: 48px;
+      border-radius: 8px;
+      &_title {
+        margin: 0;
+        @include H5;
+        text-align: left;
+      }
+      &-footer {
+        margin-top: 40px;
+      }
+      & > a {
+        display: none;
+      }
+    }
+    &-img {
+      display: none;
+    }
+  }
+  .signUp {
+    background: url(../img/signUp-tablet-bg.png);
+  }
 }

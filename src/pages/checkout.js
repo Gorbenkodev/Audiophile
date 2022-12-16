@@ -6,10 +6,41 @@ export function Checkout() {
 
   const [modalActive, setModalActive] = useState(false)
 
+
+
   return(
     <div className="checkout">
       <Header />
-      <div className="container checkout-content">
+      <div className={`checkoutModal ${modalActive ? 'checkoutModalActive' : ''}`}>
+        <div className="checkoutModal-icon">
+          <p><i className="checkoutModal-icon_arrow"></i></p>
+        </div>
+        <div className="checkoutModal-txt">
+          <h3 className="checkoutModal-txt_title">THANK YOU<br/> FOR YOUR ORDER</h3>
+          <p className="checkoutModal-txt_description">You will receive an email confirmation shortly.</p>
+        </div>
+        <div className="checkoutModal-info">
+          <div className="checkoutModal-info-products">
+            <div className="checkoutModal-info-products-content">
+              <div className="checkoutModal-info-products-content-item">
+                <div className="checkoutModal-info-products-content-item-img"></div>
+                <div className="checkoutModal-info-products-content-item-txt">
+                  <p className="checkoutModal-info-products-content-item-txt_name">XX99 MK II</p>
+                  <p className="checkoutModal-info-products-content-item-txt_price">$ 2,999</p>
+                </div>
+                <p className="checkoutModal-info-products-content-item_amount">x1</p>
+              </div>
+              <p className="checkoutModal-info-products-content-txt">and 2 other item(s)</p>
+            </div>
+            <div className="checkoutModal-info-products-price">
+              <p className="checkoutModal-info-products-price_name">grand total</p>
+              <p className="checkoutModal-info-products-price_price">$ 5,446</p>
+            </div>
+          </div>
+        </div>
+        <a href="/"><button className="checkoutModal_btn">BACK TO HOME</button></a>
+      </div>
+      <div className="container-xl checkout-content">
       <a href="#" className="checkoutBackBtn">Go Back</a>
         <form className="checkout-content-form col-9">
           <h3 className="checkout-content-form-title">Checkout</h3>
@@ -102,35 +133,7 @@ export function Checkout() {
           <button onClick={() => setModalActive(prev => !prev)} className="checkout-content-sum_btn">CONTINUE & PAY</button>
         </div>
       </div>
-      <div className={`checkoutModal ${modalActive ? 'checkoutModalActive' : ''}`}>
-        <div className="checkoutModal-icon">
-          <p><i className="checkoutModal-icon_arrow"></i></p>
-        </div>
-        <div className="checkoutModal-txt">
-          <h3 className="checkoutModal-txt_title">THANK YOU<br/> FOR YOUR ORDER</h3>
-          <p className="checkoutModal-txt_description">You will receive an email confirmation shortly.</p>
-        </div>
-        <div className="checkoutModal-info">
-          <div className="checkoutModal-info-products">
-            <div className="checkoutModal-info-products-content">
-              <div className="checkoutModal-info-products-content-item">
-                <div className="checkoutModal-info-products-content-item-img"></div>
-                <div className="checkoutModal-info-products-content-item-txt">
-                  <p className="checkoutModal-info-products-content-item-txt_name">XX99 MK II</p>
-                  <p className="checkoutModal-info-products-content-item-txt_price">$ 2,999</p>
-                </div>
-                <p className="checkoutModal-info-products-content-item_amount">x1</p>
-              </div>
-              <p className="checkoutModal-info-products-content-txt">and 2 other item(s)</p>
-            </div>
-            <div className="checkoutModal-info-products-price">
-              <p className="checkoutModal-info-products-price_name">grand total</p>
-              <p className="checkoutModal-info-products-price_price">$ 5,446</p>
-            </div>
-          </div>
-        </div>
-        <a href="/"><button className="checkoutModal_btn">BACK TO HOME</button></a>
-      </div>
+      
       <Footer />
     </div>
   )

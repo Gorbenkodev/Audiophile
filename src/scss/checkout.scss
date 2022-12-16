@@ -167,7 +167,7 @@
   margin: auto;
   background-color: #fff;
   padding: 56px 48px;
-  width: 30%;
+  width: 540px;
   border-radius: 8px;
   &-icon {
     position: relative;
@@ -277,3 +277,60 @@
 .checkout-content-form-shopping-inpts-zip { grid-area: zip;}
 .checkout-content-form-shopping-inpts-city { grid-area: city;}
 .checkout-content-form-shopping-inpts-country { grid-area: country;}
+
+@media screen and (max-width: 1024px) {
+  .checkout {
+    &-content {
+      flex-direction: column;
+      &-form {
+        width: 100%;
+      }
+      &-sum {
+        width: 100%;
+        &-product {
+          display: grid;
+          grid-template-columns: auto auto 1fr;
+          &-txt {
+            margin-left: 16px;
+          }
+          &_amount {
+            text-align: end;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .checkoutModal {
+    width: 90%;
+    &-info {
+      &-products {
+        flex-direction: column;
+        &-content {
+          border-radius: 8px 8px 0 0;
+        }
+        &-price {
+          border-radius: 0 0 8px 8px;
+        }
+      }
+    }
+  }
+  
+}
+
+@media screen and (max-width: 576px) {
+  .checkout {
+    &-content {
+      &-form {
+        &-billing, &-shopping, &-payment {
+          &-inpts {
+            display: flex;
+            flex-direction: column;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,11 +1,14 @@
 import React from "react";
 import '../css/sign.css'
-import { BlackLogo } from "../img/svg";
+import { BlackLogo, Logo } from "../img/svg";
 
 export function SignUp() {
 
   return(
     <div className="signUp">
+      <div className="signUp-header">
+        <a href="/"><Logo /></a>
+      </div>
       <div className="signUp-content col-3">
         <a href="/"><BlackLogo /> </a>
         <h2 className="signUp-content_title">create your account</h2>

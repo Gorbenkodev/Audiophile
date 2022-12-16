@@ -3,6 +3,14 @@
   display: -ms-flexbox;
   display: flex;
 }
+.signIn-header, .signUp-header {
+  display: none;
+  height: 90px;
+  padding: 32px 0;
+  border-bottom: 1px solid #333333;
+  width: 90%;
+  margin: 0 auto;
+}
 .signIn-content, .signUp-content {
   margin: 130px 90px;
 }
@@ -208,4 +216,91 @@
 
 input:focus {
   border: 1px solid #D87D4A;
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .signIn, .signUp {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: url(../img/signIn-tablet-bg.png);
+  }
+  .signIn-header, .signUp-header {
+    display: block;
+  }
+  .signIn-content, .signUp-content {
+    margin: 120px auto;
+    width: 70%;
+    background-color: #FFF;
+    padding: 48px;
+    border-radius: 8px;
+  }
+  .signIn-content_title, .signUp-content_title {
+    margin: 0;
+  }
+  .signIn-content-footer, .signUp-content-footer {
+    margin-top: 40px;
+  }
+  .signIn-content > a, .signUp-content > a {
+    display: none;
+  }
+  .signIn-img, .signUp-img {
+    display: none;
+  }
+  .signUp {
+    background: url(../img/signUp-tablet-bg.png);
+  }
+}
+@media screen and (max-width: 576px) {
+  .signIn, .signUp {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: url(../img/signIn-tablet-bg.png);
+  }
+  .signIn-header, .signUp-header {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .signIn-content, .signUp-content {
+    margin: 120px auto;
+    width: 90%;
+    background-color: #FFF;
+    padding: 48px;
+    border-radius: 8px;
+  }
+  .signIn-content_title, .signUp-content_title {
+    margin: 0;
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: 1.71429px;
+    text-transform: uppercase;
+    text-align: left;
+  }
+  .signIn-content-footer, .signUp-content-footer {
+    margin-top: 40px;
+  }
+  .signIn-content > a, .signUp-content > a {
+    display: none;
+  }
+  .signIn-img, .signUp-img {
+    display: none;
+  }
+  .signUp {
+    background: url(../img/signUp-tablet-bg.png);
+  }
 }
